@@ -19,3 +19,9 @@ python3 log_analysis.py
 ## Sample Output
 
 192.168.1.20 2
+
+
+## How it works
+- Read log file
+- Extract failed login lines
+- Count IP occurrences
