@@ -22,3 +22,9 @@ python3 log_analysis.py log.txt
 
 ## Sample Output
 Suspicious IP: 192.168.1.20  Failed attempts: 3
+
+## How it works
+- Read the log file line by line
+- Extract failed login attempts
+- Count failed attempts per IP address
+- Print suspicious IPs based on threshold
