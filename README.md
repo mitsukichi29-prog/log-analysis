@@ -1,27 +1,24 @@
 # Log Analysis Tool
 
 ## Overview
-This tool analyzes log files and detects failed login attempts.
+This tool analyzes log files and detects suspicious failed login attempts.
 
 ## Features
-- Detect failed login
+- Detect failed login attempts
 - Count IP addresses
+- Detect suspicious IPs (failed attempts >= 3)
 
 ## Usage
-python3 log_analysis.py
+python3 log_analysis.py <logfile>
+
+Example:
+python3 log_analysis.py log.txt
 
 ## Sample Log
-
 192.168.1.10 login success
+192.168.1.20 login failed
 192.168.1.20 login failed
 192.168.1.20 login failed
 
 ## Sample Output
-
-192.168.1.20 2
-
-
-## How it works
-- Read log file
-- Extract failed login lines
-- Count IP occurrences
+Suspicious IP: 192.168.1.20  Failed attempts: 3
